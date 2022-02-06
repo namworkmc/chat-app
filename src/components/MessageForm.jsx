@@ -13,6 +13,7 @@ function MessageForm(props) {
     if (text.length > 0) {
       sendMessage(props, chatId, { text });
     }
+
     setValue("");
   };
 
@@ -49,9 +50,9 @@ function MessageForm(props) {
         hidden={true}
       />
 
-        <button type={"submit"} className={"send-button"}>
-            <SendOutlined className={"send-icon"}/>
-        </button>
+      <button type={"submit"} className={"send-button"}>
+        <SendOutlined className={"send-icon"} />
+      </button>
     </form>
   );
 }
